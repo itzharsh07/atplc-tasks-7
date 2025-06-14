@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- Header with colspan -->
+    <tr>
+        <th colspan="2">Student Info</th>
+        <th rowspan="2">CGPA (Till Last Semester)</th>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Registration No</th>
+        <!-- CGPA column already spans two rows -->
+    </tr>
+    
+    <!-- First student -->
+    <tr>
+        <td rowspan="2">Alice Johnson</td>
+        <td>REG2023-001</td>
+        <td>8.7</td>
+    </tr>
+    <tr>
+        <!-- Name is rowspan above -->
+        <td>REG2023-002</td>
+        <td>9.0</td>
+    </tr>
+
+    <!-- Second student -->
+    <tr>
+        <td>Bob Smith</td>
+        <td>REG2023-003</td>
+        <td>8.4</td>
+    </tr>
+</table>
+
+</body>
+</html>
